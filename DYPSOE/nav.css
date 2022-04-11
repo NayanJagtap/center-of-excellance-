@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+/***********************************************NAV BAR*****************************************************/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Luxurious Roman', cursive;
+  /* background-color: #ddd; */
+}
+.dypsoe{
+  background: linear-gradient(-45deg,rgb(162, 162, 230),rgb(206, 206, 245),rgb(199, 199, 241),#84b6df);
+  
+}
+
+nav{ 
+  height: 4rem;
+  background: black;
+  display:center;
+  align-items: center;
+  justify-content: space-between;
+  padding:30px 60px 80px 60px;
+  
+}
+nav li{
+  padding:0px;
+}
+
+nav ul{
+  display:flex;
+  list-style: none;
+  margin:0px;
+
+}
+nav .menu-btn i{
+  color:white;
+  display:none;
+}
+nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 9px 11px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  background: linear-gradient(-45deg,rgb(162, 162, 230),rgb(206, 206, 245),rgb(199, 199, 241),#84b6df);
+  color: red;
+
+}
+nav ul li{
+  margin:0 5px;
+  
+  
+}
+nav #logob07{
+  height:4rem;
+  margin-top: 5px;
+}
+#dypsoelogo{
+  height:140px;
+}
+#logob071{
+  height:140px;
+  padding: 0px;
+  margin:0px;
+  border-radius: 20px;
+}
+.dypsoe{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:8px 40px 20px 30px;
+}
+#headingb07{
+font-family: 'Lobster', cursive;
+font-size: 90px;
+}
+#subheadingb07{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:40px;
+  font-weight: 200;
+}
+#click{
+  display:none;
+}
+body{
+  width: auto;
+}
+
+/********************************************************************media quries****************************************************/
+@media (max-width:720px){
+  body{
+    width:auto;
+  }
+  .dypsoe{
+    width:100%;
+    display:block;
+  }
+  nav{
+    width:100%;
+  }
+  nav ul{
+    position:relative;
+    left:-130%;
+    top:60%;
+    background:#111;
+    height:max-content;
+    width:100%;
+    height:fit-content;
+    display:block;
+    text-align: center;
+    transition: all 0.80s ease-in;
+    z-index:1;
+ }
+ #click:checked ~ ul{
+   left:0;
+ }
+ nav .menu-btn i{
+  color:white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+}
+  nav ul li{
+    margin:10px 0;
+
+  }
+  nav ul li a{
+    font-size: 18px;
+    display:block;
+    height:max-content;
+  }
+  nav ul li a:hover,nav ul li a.active{
+    color:cyan;
+    background:none;
+  }
+  #dypsoelogo{
+    height:100px;
+    width:100px;
+    
+  }
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width:50%;
+  }
+  #logob071{
+    height:140px;
+    padding: 0px;
+    margin-left: 30%;
+    border-radius: 20px;
+  }
+  #headingb07{
+    font-size: 43px;
+    text-align: center;
+  }
+  #subheadingb07{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+  }
+  #content1,#content2,#content3{
+    font-family: cursive;
+    font-size: 30px;
+  }
+
+  #content1::after{
+    content:"\a";
+    white-space:pre;
+
+  }
+  #content2::after{
+    content:"\a";
+    white-space:pre;
+
+  }}
+
+
+  /********************************************************ABOUT US**************************************************/
+  .section-AboutUs{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+    margin-top: 0rem;
+  }
+  .container-AboutUs{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+  }
+  .content-section-AboutUs{
+    float: left;
+    width: 55%;
+  }
+  .image-section-AboutUs{
+    float: right;
+    width: 40%;
+  }
+  .image-section-AboutUs img{
+    width: 100%;
+    height: auto;
+  }
+  .content-section-AboutUs .title-AboutUs{
+    text-transform: uppercase;
+    font-size: 28px;
+  }
+  .content-section-AboutUs .content-AboutUs h3{
+    margin-top: 20px;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .content-section-AboutUs .content-AboutUs p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .content-section-AboutUs .content-AboutUs .button-AboutUs{
+    margin-top: 2rem;
+  }
+  .content-section-AboutUs .content-AboutUs .button-AboutUs a{
+    background-color: #3d3d3d;
+    padding:12px 40px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .content-section-AboutUs .content-AboutUs .button-AboutUs a:hover{
+    background-color: #a52a2a;
+    color:#fff;
+  }
+  .content-section-AboutUs .social-AboutUs{
+    margin: 40px 40px;
+  }
+  .content-section-AboutUs .social-AboutUs i{
+    color:#a52a2a;
+    font-size: 30px;
+    padding:0px 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .content-section-AboutUs .social-AboutUs i:hover{
+    color:#3d3d3d;
+  }
+  @media screen and (max-width: 768px){
+    .container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top:50px;
+  }
+  .content-section-AboutUs{
+    float:none;
+    width:100%;
+    display: block;
+    margin:auto;
+  }
+  .image-section-AboutUs{
+    float:none;
+    width:100%;
+    
+  }
+  .image-section-AboutUs img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:auto;
+  }
+  .content-section-AboutUs .title-AboutUs{
+    text-align: center;
+    font-size: 19px;
+  }
+  .content-section-AboutUs .content-AboutUs .button-AboutUs{
+    text-align: center;
+  }
+  .content-section-AboutUs .content .button-AboutUs a{
+    padding:9px 30px;
+  }
+  .content-section-AboutUs .social-AboutUs{
+    text-align: center;
+  }
+  }
+
+
+  .bot{
+    margin-top: 40%;
+    background-color: indigo;
+
+  }
+
+
+
+
